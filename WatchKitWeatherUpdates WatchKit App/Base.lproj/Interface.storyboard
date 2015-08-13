@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" alignment="left" text="Weather Type" textAlignment="center" id="7aO-PQ-DiT"/>
+                        <imageView width="100" height="100" alignment="center" id="ajk-7A-Syj"/>
+                        <button width="1" alignment="left" title="Button" id="pbp-TJ-XcV">
+                            <connections>
+                                <action selector="onUpdateWeather" destination="AgC-eL-Hgc" id="0q7-Pd-0ge"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imgWeather" destination="ajk-7A-Syj" id="UFB-yV-n85"/>
+                        <outlet property="lblWeatherType" destination="7aO-PQ-DiT" id="9fb-Xc-fij"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
